@@ -1,4 +1,5 @@
 import OptionSwitch from './components/OptionSwitch'
+import ActionSelector from './components/ActionSelector'
 import './App.css'
 
 function App() {
@@ -6,7 +7,9 @@ function App() {
 
   return (
     <>
-  <OptionSwitch/>
+    <OptionSwitch/>
+    <ActionSelector/>
+  
     </>
   )
 }
