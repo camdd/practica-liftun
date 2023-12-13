@@ -1,0 +1,49 @@
+@import '@radix-ui/colors/black-alpha.css';
+@import '@radix-ui/colors/mauve.css';
+@import '@radix-ui/colors/violet.css';
+
+button,
+fieldset,
+input {
+  all: unset;
+}
+
+.calendar {
+    position: relative;
+    border-radius: 4px;
+    padding: 20px;
+    width: 260px;
+    background-color: white;
+    box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+    animation-duration: 400ms;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+  }
+
+  .calendarInput {
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 200px; 
+  }
+
+  .calendarInput:focus + .container {
+    display: block;
+  }
+
+  .calendarDates {
+    margin-top: 10px;
+  }
+
+  .calendar-content {
+    border-radius: 4px;
+    padding: 20px;
+    width: 260px;
+    background-color: white;
+    box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+    animation-duration: 400ms;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+  }
+
+  
