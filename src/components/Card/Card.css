@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.action-name-input {
+    display: flex;
+    font-size: 1.7em;
+    text-align: start;
+}
+
+.switch-question {
+    display: flex;
+    gap: 20px;
+}
+
+.action-type {
+    display: flex;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
