@@ -19,8 +19,10 @@ const Calendar = () => {
           placeholder="Seleccionar fecha"
           readOnly 
         />
-        <DemoContainer components={["DatePicker", "DatePicker"]} className="container">
+        <div className="container">
+        <DemoContainer components={["DatePicker", "DatePicker"]}>
           <DatePicker className="calendarDates" label="Desde" defaultValue={dayjs("2022-04-17")} />
+          
           <DatePicker
             className="calendarDates"
             label="Hasta"
@@ -28,6 +30,8 @@ const Calendar = () => {
             onChange={(newValue) => setValue(newValue)}
           />
         </DemoContainer>
+        </div>
+        
       </div>
     </LocalizationProvider>
   );
