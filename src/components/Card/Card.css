@@ -15,23 +15,25 @@
 
 .calendar-container {
     display: flex;
-    width: 250p;
-    
+    justify-content: space-evenly;
 }
 
 .calendar {
-    transform: scale(0.8)
+    flex:1;
+    transform: scale(0.9)
 }
 
 .calendar-icon {
+    flex: 0;
     display: flex;
-    align-items: start;
-    transform: scale(0.5)
+    align-items: center;
+    transform: scale(0.9)
+    
 }
 
 .action-name-input {
     display: flex;
-    font-size: 2.2em;
+    font-size: 2.4em;
     text-align: start;
 }
 
@@ -40,13 +42,12 @@
     flex-direction: column;
     gap: 5px;
     flex-wrap: wrap;
-    width: 425px;
     text-align: start;;
 }
 
 .switch-question-title {
     font-weight: 500;
-    font-size: 1.6em;
+    font-size: 1.7em;
 }
 
 
@@ -54,10 +55,10 @@
     display: flex;
 }
 
-
 .buttons {
     display: flex;
+    justify-content: end;
     gap: 20px;
-    justify-content: space-between;
-    width: 250px;
+    justify-content: space-around;
+    transform: scale(1.2);
 }

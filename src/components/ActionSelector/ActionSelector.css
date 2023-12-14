@@ -1,6 +1,8 @@
 @import '@radix-ui/colors/black-alpha.css';
 @import '@radix-ui/colors/mauve.css';
 @import '@radix-ui/colors/violet.css';
+@import '@radix-ui/colors/teal.css';
+@import '@radix-ui/colors/mint.css';
 
 /* reset */
 button {
@@ -8,19 +10,19 @@ button {
 }
 
 .SelectTrigger {
-  width: 250px;
+  width: 400px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 0 10px;
-  font-size: 15px;
+  font-size: 1.2em;
   line-height: 1;
-  height: 35px;
+  height: 45px;
   gap: 5px;
   background-color: white;
-  color: var(--violet-11);
-  box-shadow: 0 2px 10px var(--black-a7);
+  color: var(--mint-11);
+  box-shadow: 0 2px 10px var(--black-a8);
 }
 .SelectTrigger:hover {
   background-color: var(--mauve-3);
@@ -29,7 +31,7 @@ button {
   box-shadow: 0 0 0 2px black;
 }
 .SelectTrigger[data-placeholder] {
-  color: var(--violet-9);
+  color: var(--mint-11);
 }
 
 .SelectIcon {
@@ -48,9 +50,10 @@ button {
 }
 
 .SelectItem {
-  font-size: 13px;
+  font-size: 1.2em;
   line-height: 1;
-  color: var(--violet-11);
+  gap: 10px;
+  color: var(--mint-11);
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -65,8 +68,8 @@ button {
 }
 .SelectItem[data-highlighted] {
   outline: none;
-  background-color: var(--violet-9);
-  color: var(--violet-1);
+  background-color: var(--mint-10);
+  color: var(--mint-11);
 }
 
 .SelectLabel {
@@ -78,7 +81,7 @@ button {
 
 .SelectSeparator {
   height: 1px;
-  background-color: var(--violet-6);
+  background-color: var(--mint-11);
   margin: 5px;
 }
 
