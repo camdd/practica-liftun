@@ -1,10 +1,26 @@
+/* eslint-disable react/prop-types */
 import { Button } from "@radix-ui/themes";
 import './ActionButton.css';
 
-const ActionButton = ({onClick, buttonText, buttonColor}) => {
+const ActionButton = ({ buttonText, borderColor, shadowColor, onClick, isActive, setActiveButton }) => {
+
+
+const handleClick = () => {
+    setActiveButton(buttonText);
+    onClick();
+};
+
     return(
 
-        <Button className="btn_back" role="buttonElement" onClick={onClick} style={{ backgroundColor: buttonColor }}>
+        <Button
+            className="btn_back"
+            onClick={handleClick}
+            style={{
+                backgroundColor: isActive ? borderColor : "transparent",
+                borderColor,
+                boxShadow: isActive ? `0 0 5px ${shadowColor}` : "none",
+            }}
+        >
           {buttonText}
         </Button>
 
@@ -12,29 +28,3 @@ const ActionButton = ({onClick, buttonText, buttonColor}) => {
 }
 
 export default ActionButton
-
-/* 
-luego cuando lo quiera importar en mis cards:
-
-import React from 'react';
-import ActionButton from './ActionButton';
-
-const Card = () => {
-    const handleSave = () => {
-        // Lógica para guardar los datos
-    };
-
-    const handleCancel = () => {
-        // Lógica para cancelar
-    };
-
-    return (
-        <>
-            <ActionButton onClick={handleSave} buttonText="Guardar" />
-            <ActionButton onClick={handleCancel} buttonText="Cancelar" />
-            {O cualquier otra lógica}
-        </>
-    );
-}
-
-export default Card; */

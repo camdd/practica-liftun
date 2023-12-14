@@ -5,8 +5,11 @@ import OptionSwitch from "../OptionSwitch";
 import { TextField } from "@radix-ui/themes";
 import CalendarImg from "../../assets/Calendar.png"
 import './Card.css'
+import { useState } from "react";
 
 const Card = () => {
+  const [activeButton, setActiveButton] = useState(null);
+  
   return (
     <div className="container">
       <div className="action-name-input">
@@ -19,12 +22,15 @@ const Card = () => {
       </div>
 
       <div className="switch-question">
-         ¿Su acción tiene un responsable?  
-        <OptionSwitch />
+         <div className="switch-question-title">¿Su acción tiene un responsable?  
+        </div>
+        <OptionSwitch className="switch-question-text"/>
       </div>
 
       <div className="switch-question">
-         ¿Su acción tiene un objetivo?  
+      <div className="switch-question-title">¿Su acción tiene un objetivo?  
+        </div>
+         
         <OptionSwitch />
       </div>
 
@@ -33,19 +39,37 @@ const Card = () => {
       
 
       <div className="switch-question">
-        ¿Su acción requiere calcular la huella de carbono?  
+      <div className="switch-question-title">¿Su acción requiere calcular la huella de carbono?    
+        </div>
+        
         <OptionSwitch />
       </div>
 
       <div className="switch-question">
-         ¿Su acción es una obligación legal?  
+      <div className="switch-question-title">¿Su acción es una obligación legal? 
+        </div>
+           
         <OptionSwitch />
       </div>
 
       <div className="buttons">
-        <ActionButton buttonText="Guardar" buttonColor="#fecc8f" />
-        <ActionButton buttonText="Cancelar" buttonColor="#f4de4e" />
-      </div>
+                <ActionButton
+                    buttonText="Cancelar"
+                    borderColor="#BFB749"
+                    shadowColor="#BFB749"
+                    isActive={activeButton === "Cancelar"}
+                    setActiveButton={setActiveButton}
+                    onClick={() => console.log("Cancelar clicked")}
+                />
+                <ActionButton
+                    buttonText="Guardar"
+                    borderColor="#05F2F2"
+                    shadowColor="#05a9a9"
+                    isActive={activeButton === "Guardar"}
+                    setActiveButton={setActiveButton}
+                    onClick={() => console.log("Guardar clicked")}
+                />
+            </div>
     </div>
   );
 };
