@@ -3,18 +3,19 @@ import ActionSelector from "../ActionSelector";
 import Calendar from "../Calendar";
 import OptionSwitch from "../OptionSwitch";
 import { TextField } from "@radix-ui/themes";
+import CalendarImg from "../../assets/Calendar.png"
 import './Card.css'
 
 const Card = () => {
   return (
     <div className="container">
       <div className="action-name-input">
-      <TextField.Input placeholder="Nombre de la acción" />
+      <TextField.Input className="placeholder-text" placeholder="Nombre de la acción" />
       </div>
       
       <div className="calendar-container">
-        <div className="calendar-icon"></div>
-        <Calendar />
+        <div className="calendar-icon"> <img src={CalendarImg} alt="" /></div>
+        <Calendar className="calendar" />
       </div>
 
       <div className="switch-question">
@@ -32,7 +33,7 @@ const Card = () => {
       
 
       <div className="switch-question">
-         ¿Su acción requiere calcular la huella de carbono?  
+        ¿Su acción requiere calcular la huella de carbono?  
         <OptionSwitch />
       </div>
 
@@ -42,8 +43,8 @@ const Card = () => {
       </div>
 
       <div className="buttons">
-        <ActionButton />
-        <ActionButton />
+        <ActionButton buttonText="Guardar" buttonColor="#fecc8f" />
+        <ActionButton buttonText="Cancelar" buttonColor="#f4de4e" />
       </div>
     </div>
   );

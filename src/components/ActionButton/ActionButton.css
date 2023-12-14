@@ -1,8 +1,10 @@
 .btn_back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #000;
     text-decoration: none;
     background-color: #fecc8f;
-    width: 45px;
     height: 15px;
     display: flex;
     margin-top: 1.5em;

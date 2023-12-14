@@ -1,7 +1,24 @@
 .container {
     display: flex;
     flex-direction: column;
+    margin-top: 3em;
+}
+
+
+.calendar-container {
+    display: flex;
+    width: 250p;
     
+}
+
+.calendar {
+    transform: scale(0.8)
+}
+
+.calendar-icon {
+    display: flex;
+    align-items: start;
+    transform: scale(0.5)
 }
 
 .action-name-input {
@@ -12,7 +29,12 @@
 
 .switch-question {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 5px;
+    flex-wrap: wrap;
+    width: 350px;
+    text-align: start;
+    font-size: 1.3em;
 }
 
 .action-type {
@@ -24,4 +46,5 @@
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    width: 250px;
 }

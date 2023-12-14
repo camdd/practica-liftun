@@ -1,11 +1,10 @@
 import { Button } from "@radix-ui/themes";
-
 import './ActionButton.css';
 
-const ActionButton = ({onClick, buttonText}) => {
+const ActionButton = ({onClick, buttonText, buttonColor}) => {
     return(
 
-        <Button className="btn_back" role="buttonElement" onClick={onClick}>
+        <Button className="btn_back" role="buttonElement" onClick={onClick} style={{ backgroundColor: buttonColor }}>
           {buttonText}
         </Button>
 

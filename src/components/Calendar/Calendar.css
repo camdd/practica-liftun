@@ -11,11 +11,10 @@ input {
 .calendar {
   display: flex;
   flex-direction: column;
-  gap: 20px; 
     position: relative;
     border-radius: 4px;
     padding: 20px;
-    width: 260px;
+    width: 250px;
     background-color: white;
     box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
     animation-duration: 400ms;
@@ -24,11 +23,10 @@ input {
   }
 
   .calendarInput {
-    width: 100%;
     padding: 5px;
     border-radius: 4px;
     font-size: 14px;
-    width: 200px; 
+    width: 250px; 
   }
 
   .calendarInput:focus + .container {
@@ -53,6 +51,5 @@ input {
   .container {
     display: flex;
     flex-direction: column;
-    gap: 10px; 
-    max-height: 300px;
+    margin-top: 0 !important;
   }
