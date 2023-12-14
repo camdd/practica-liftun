@@ -5,9 +5,18 @@ button {
   all: unset;
 }
 
+.switch-container {
+  transform: scale(0.7);
+  transform-origin: top left;
+}
+
+.switch-yes-no {
+  display: flex;
+  align-items: center
+}
+
 .SwitchRoot {
-  width: 25px;
-  height: 17.5px;
+
   background-color: var(--black-a9);
   border-radius: 9999px;
   position: relative;
