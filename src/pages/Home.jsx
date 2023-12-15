@@ -11,9 +11,9 @@ const Home = () => {
             <p className="banner__text">
               En EcoTech nos encargamos de que todas las empresas puedan tener funcionalidades sostenibles.
             </p>
-            <a className="banner__link" href="./pages/shop.html">
+            <Link className="banner__link" to="/create-action">
               Crea tu acción sostenible
-            </a>
+            </Link>
           </div>
         </section>
       </Layout>
