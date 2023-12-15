@@ -21,13 +21,6 @@ input {
     color: black;
   }
 
-  .calendarInput {
-    padding: 5px;
-    border-radius: 4px;
-    font-size: 14px;
-    width: 250px; 
-  }
-
   .calendarInput:focus + .container {
     display: block;
   }

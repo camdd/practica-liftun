@@ -13,16 +13,9 @@ const Calendar = () => {
   return (
 <LocalizationProvider dateAdapter={AdapterDayjs}>
       <div className="calendar">
-        
-        <input
-          type="text"
-          className="calendarInput"
-          /* placeholder="Seleccionar fecha" */
-          readOnly 
-        />
         <div className="container">
         <DemoContainer components={["DatePicker", "DatePicker"]}>
-          <DatePicker className="calendarDates" label="Desde" defaultValue={dayjs("2022-04-17")} />
+          <DatePicker className="calendarDates" label="Desde" defaultValue={dayjs("2022-04-17")} required />
           
           <DatePicker
             className="calendarDates"
