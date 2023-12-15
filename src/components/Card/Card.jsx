@@ -55,15 +55,15 @@ const Card = () => {
       <div className="buttons">
                 <ActionButton
                     buttonText="Cancelar"
-                    borderColor="#BFB749"
-                    shadowColor="#BFB749"
+                    borderColor="#58D5BA"
+                    shadowColor="#277F70"
                     isActive={activeButton === "Cancelar"}
                     setActiveButton={setActiveButton}
                     onClick={() => console.log("Cancelar clicked")}
                 />
                 <ActionButton
                     buttonText="Guardar"
-                    borderColor="#05F2F2"
+                    borderColor="#58D5BA"
                     shadowColor="#05a9a9"
                     isActive={activeButton === "Guardar"}
                     setActiveButton={setActiveButton}

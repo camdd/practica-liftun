@@ -58,7 +58,7 @@
 .buttons {
     display: flex;
     justify-content: end;
-    gap: 20px;
-    justify-content: space-around;
+    gap: 20%;
+    justify-content: center;
     transform: scale(1.2);
 }
