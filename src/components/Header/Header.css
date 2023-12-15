@@ -1,0 +1,46 @@
+@import '@radix-ui/colors/mint.css';
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;0,800;1,400&display=swap');
+
+header {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    width: 100% !important;
+    position: fixed;
+    top: 0;
+    z-index: 999;    
+}
+
+ul {
+    list-style: none; 
+    padding: 10px; 
+    margin: 0; 
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.navbar__link {
+    color: var(--mint-11);
+    font-size: 1.5em;
+    display: inline-block;
+    transition: background-color 0.5s ease-in-out;
+    position: relative;
+    padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+    border-radius: 20px
+}
+
+.navbar__link:hover {
+    background: var(--mint-7);
+    color:#FFFFFF
+}
+
+.navbar__link:not(:hover) {
+    transition: background-color 0.3s ease-in-out;
+    background: transparent;
+  }
+
+
