@@ -13,10 +13,11 @@ const Calendar = () => {
   return (
 <LocalizationProvider dateAdapter={AdapterDayjs}>
       <div className="calendar">
+        
         <input
           type="text"
           className="calendarInput"
-          placeholder="Seleccionar fecha"
+          /* placeholder="Seleccionar fecha" */
           readOnly 
         />
         <div className="container">

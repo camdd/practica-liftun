@@ -16,6 +16,7 @@ const Card = () => {
       <TextField.Input className="placeholder-text" placeholder="Nombre de la acción" />
       </div>
       
+      <div className="switch-question-title">Seleccionar fecha</div>
       <div className="calendar-container">
         <div className="calendar-icon"> <img src={CalendarImg} alt="" /></div>
         <Calendar className="calendar" />
