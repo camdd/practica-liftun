@@ -4,7 +4,6 @@ import "./OptionSwitch.css";
 const OptionSwitch = () => {
   return (
     <div className="switch-container">
-      <form>
         <div className="switch-yes-no">
           <label
             className="Label"
@@ -24,7 +23,6 @@ const OptionSwitch = () => {
             Si
           </label>
         </div>
-      </form>
     </div>
   );
 };

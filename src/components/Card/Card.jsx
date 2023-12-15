@@ -6,12 +6,18 @@ import { TextField } from "@radix-ui/themes";
 import CalendarImg from "../../assets/Calendar.png";
 import "./Card.css";
 import { useState } from "react";
+import {useForm} from "react-hook-form"
 
 const Card = () => {
+  const { control, handleSubmit } = useForm();
   const [activeButton, setActiveButton] = useState(null);
 
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
   return (
-    <div className="container">
+    <form className="container" onSubmit={handleSubmit(onSubmit)}>
       <div className="form-container">
         <div className="action-name-input">
           <TextField.Input
@@ -27,7 +33,7 @@ const Card = () => {
             {" "}
             <img src={CalendarImg} alt="" />
           </div>
-          <Calendar className="calendar" />
+          <Calendar className="calendar" control={control} />
         </div>
 
         <div className="switch-question">
@@ -46,7 +52,7 @@ const Card = () => {
         </div>
 
         <div className="action-type">
-          <ActionSelector />
+        <ActionSelector control={control} />
         </div>
 
         <div className="switch-question">
@@ -84,7 +90,7 @@ const Card = () => {
           />
         </div>
       </div>
-    </div>
+    </form>
   );
 };
 
