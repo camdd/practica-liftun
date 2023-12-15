@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .form-container {
@@ -25,9 +24,11 @@
 
 .calendar-container {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .calendar {
+    flex: 1;
     transform: scale(0.9);
     padding: 1em;
 }
@@ -50,7 +51,7 @@
     flex-direction: column;
     gap: 5px;
     flex-wrap: wrap;
-    text-align: start;;
+    text-align: start;
 }
 
 .switch-question-title {
