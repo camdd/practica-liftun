@@ -1,30 +1,38 @@
 .btn_back {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #212529;
-    border: 2px solid;
-    text-decoration: none;
-    height: 15px;
-    display: flex;
-    margin-top: 1.5em;
-    border-radius: 20px;
-    font-weight: 600;
-    background-color: transparent;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: azure;
+  border: 2px solid;
+  text-decoration: none;
+  height: 15px;
+  display: flex;
+  margin-top: 1.5em;
+  border-radius: 20px;
+  font-weight: 600;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+  min-width: 7rem;
+  height: 2rem;
+}
 
-  .btn_back:active {
-    transition: box-shadow 0s;
-  }
+.btn_primary {
+  color: #e0fff1;
+}
 
-  .btn_back a {
-    text-decoration: none;
-  }
+.btn_secondary {
+  color: #FFC398;
+}
 
-  .btn_back:active a {
-    color: white;
-  }
+.btn_primary:active {
+  background-color: #B6EDE5;
+  transition: box-shadow 0s;
+}
+
+.btn_secondary:active {
+  background-color: #d5a958;
+  transition: box-shadow 0s;
+}

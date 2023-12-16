@@ -16,6 +16,7 @@
     align-items: flex-start;
     width: 50vw;
     gap:2rem;
+    min-height: calc(100vh - 157px - 88px);
 }
 
 .placeholder-text::placeholder {
@@ -65,8 +66,6 @@
 
 .buttons {
     display: flex;
-    justify-content: end;
     gap: 20%;
-    justify-content: center;
-    transform: scale(1.2);
+    justify-content: start;
 }

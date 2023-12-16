@@ -2,16 +2,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import Card from "./components/Card/Card";
 import Home from "./pages/Home";
 import CreateAction from "./pages/Create-action";
+import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
 
-function App({ children }) {
+function App() {
+  const queryClient = new QueryClient();
+
   return (
-    <>
-      {" "}
+      <QueryClientProvider client={queryClient}>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
-        {children}
         <Router>
           <Routes>
             <Route path="/" element={<Home title="home" />} />
@@ -21,11 +21,8 @@ function App({ children }) {
             />
           </Routes>
         </Router>
-        {/* 
-      <Home/>
-      <Card/> */}
       </LocalizationProvider>
-    </>
+      </QueryClientProvider>
   );
 }
 

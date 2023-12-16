@@ -1,0 +1,48 @@
+{
+  "actions": [
+    {
+      "action_name": "Accion 7",
+      "date_from": "Thu, 28 Dec 2023 03:00:00 GMT",
+      "date_to": "Thu, 28 Dec 2023 03:00:00 GMT",
+      "action_type": "better_place",
+      "responsible": false,
+      "objective": false,
+      "co2_footprint": false,
+      "legal_advice": false,
+      "id": 10
+    },
+    {
+      "action_name": "Accion redir",
+      "date_from": "Wed, 13 Dec 2023 03:00:00 GMT",
+      "date_to": "Wed, 20 Dec 2023 03:00:00 GMT",
+      "action_type": "better_company",
+      "responsible": true,
+      "objective": true,
+      "co2_footprint": false,
+      "legal_advice": false,
+      "id": 11
+    },
+    {
+      "action_name": "Accion 5",
+      "date_from": "Thu, 14 Dec 2023 03:00:00 GMT",
+      "date_to": "Fri, 22 Dec 2023 03:00:00 GMT",
+      "action_type": "better_company",
+      "responsible": true,
+      "objective": false,
+      "co2_footprint": false,
+      "legal_advice": false,
+      "id": 12
+    },
+    {
+      "action_name": "Accion 6",
+      "date_from": "Wed, 13 Dec 2023 03:00:00 GMT",
+      "date_to": "Fri, 29 Dec 2023 03:00:00 GMT",
+      "action_type": "better_profit",
+      "responsible": false,
+      "objective": false,
+      "co2_footprint": false,
+      "legal_advice": false,
+      "id": 13
+    }
+  ]
+}

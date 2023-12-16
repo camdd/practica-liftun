@@ -14,13 +14,13 @@ const Footer = () => {
               </Link>
             </li>
             <li className="navbar__item">
-              <Link className="navbar__link" to="/">
+              <Link className="navbar__link" to="https://www.liftun.com/">
                 SOBRE NOSOTROS
               </Link>
             </li>
             <li className="navbar__item">
-              <Link className="navbar__link" to="/">
-                CONTACTO
+              <Link className="navbar__link" to="https://www.liftun.com/blog/blog-liftun-1">
+                BLOG
               </Link>
             </li>
           </ul>

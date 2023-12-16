@@ -1,27 +1,17 @@
 /* eslint-disable react/prop-types */
-import { Button } from "@radix-ui/themes";
+import {Button} from "@radix-ui/themes";
 import './ActionButton.css';
 
-const ActionButton = ({ buttonText, borderColor, shadowColor, onClick, isActive, setActiveButton }) => {
-
-
-const handleClick = () => {
-    setActiveButton(buttonText);
-    onClick();
-};
-
-    return(
+const ActionButton = ({buttonText, onClick, type, buttonStyle,disabled}) => {
+    return (
 
         <Button
-            className="btn_back"
-            onClick={handleClick}
-            style={{
-                backgroundColor: isActive ? borderColor : "transparent",
-                borderColor,
-                boxShadow: isActive ? `0 0 5px ${shadowColor}` : "none",
-            }}
+            className={buttonStyle !=="secondary" ? "btn_back btn_primary" : "btn_back btn_secondary"}
+            onClick={onClick}
+            type={type}
+            disabled={disabled}
         >
-          {buttonText}
+            {buttonText}
         </Button>
 
     )

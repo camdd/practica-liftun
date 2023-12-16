@@ -5,13 +5,9 @@
 button {
   all: unset;
 }
-
-.switch-container {
+.switch-yes-no {
   transform: scale(0.7);
   transform-origin: top left;
-}
-
-.switch-yes-no {
   display: flex;
   align-items: center
 }
@@ -38,7 +34,7 @@ button {
   border-radius: 9999px;
   box-shadow: 0 2px 2px var(--black-a7);
   transition: transform 100ms;
-  transform: translateX(px);
+  transform: translateX(8px);
   will-change: transform;
 }
 
@@ -51,6 +47,21 @@ button {
 
 .Label {
   color: white;
-  font-size: 1.7em;
+  font-size: 1.4em;
   line-height: 1;
+}
+
+
+
+.switch-question {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-wrap: wrap;
+  text-align: start;
+}
+
+.switch-question-title {
+  font-weight: 500;
+  font-size: 1.4em;
 }

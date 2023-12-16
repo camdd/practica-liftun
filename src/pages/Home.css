@@ -1,7 +1,6 @@
 
 .banner{
     background-image: url("src/assets/ecotech.jpg");
-    padding: 5rem;
     width: 100vw;
     background-size: cover;
     background-attachment: fixed;
@@ -9,6 +8,11 @@
     
 }
 
+.banner p {
+    margin-left: 2rem;
+}
+
+/* Efecto blur para la imagen de fondo */
 .banner::before{
     content:'';
     background-color: rgba(0,0,0,0.25);
@@ -25,16 +29,17 @@
     flex-direction: column;
     align-items: start;
     position: relative;
+    /* alto total de la pantalla , menos el header, menos el footer */
+    min-height: calc(100vh - 157px - 88px);
 }
 
 .banner__title {
-    font-family: 'Rethink Sans', sans-serif;
     font-size:3em;
-    color: #ffffff
+    color: #ffffff;
+    margin-bottom: 0.5rem;
 }
 
-.banner__text { 
-    font-family: 'Rethink Sans', sans-serif;
+.banner__text {
     color: #ffffff;
     font-size: 1.5em;
 }
@@ -47,4 +52,11 @@
     border-radius: 50px;
     font-weight: 500;
     transition: all .3s ease-in-out;
+}
+
+.table_container{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }

@@ -13,31 +13,41 @@ const Calendar = ({control}) => {
       <div className="calendar">
         <div className="container">
         <DemoContainer components={["DatePicker", "DatePicker"]}>
-        <Controller
-            control={control}
-            name="desde"
-            render={({ field }) => (
-              <DatePicker
-                label="Desde"
-                value={field.value}
-                onChange={(newValue) => field.onChange(newValue)}
-                renderInput={(params) => <input {...params} />}
-              />
-            )}
-          />
-          
-          <Controller
-            control={control}
-            name="hasta"
-            render={({ field }) => (
-              <DatePicker
-                label="Hasta"
-                value={field.value}
-                onChange={(newValue) => field.onChange(newValue)}
-                renderInput={(params) => <input {...params} />}
-              />
-            )}
-          />
+            <Controller
+                control={control}
+                name="date_from"
+                rules={{ required: true }}
+                render={({ field }) => {
+                    return (
+                        <DatePicker
+                            label="Desde"
+                            value={field.value}
+                            inputRef={field.ref}
+                            onChange={(date) => {
+                                field.onChange(date);
+                            }}
+                        />
+                    );
+                }}/>
+
+
+            <Controller
+                control={control}
+                name="date_to"
+                rules={{ required: true }}
+                render={({ field }) => {
+                    return (
+                        <DatePicker
+                            label="Hasta"
+                            value={field.value}
+                            inputRef={field.ref}
+                            onChange={(date) => {
+                                field.onChange(date);
+                            }}
+                        />
+                    );
+                }}/>
+
         </DemoContainer>
         </div>
         

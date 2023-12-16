@@ -5,11 +5,10 @@
     display: flex;
     background-color: #201c20;
     color: #FFFFFF;
-    width: 100%;
-    position: fixed;
+    width: 100vw;
+    position: sticky;
     bottom: 0;
     z-index: 999;
-    padding: 5px; 
     justify-content: space-around;
 }
 
