@@ -1,6 +1,5 @@
 import Layout from "../layouts/Layout"
 import Card from "../components/Card/Card";
-import './Create-action.css'
 import {useForm} from "react-hook-form";
 import ActionButton from "../components/ActionButton/index.jsx";
 import {TextField} from "@radix-ui/themes";
