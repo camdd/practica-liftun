@@ -31,7 +31,7 @@ const ActionSelector = ({control, name}) => {
                 value={field.value}
                 onOpenChange={handleOpenChange}
                 onValueChange={(newValue) => {
-                    setIsOpen(false); // Cierra el menú al seleccionar un ítem
+                    setIsOpen(false);
                     field.onChange(newValue);
                 }}>
                 <Select.Trigger className="SelectTrigger" aria-label="Action-type">

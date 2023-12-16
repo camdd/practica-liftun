@@ -12,7 +12,6 @@
     margin-left: 2rem;
 }
 
-/* Efecto blur para la imagen de fondo */
 .banner::before{
     content:'';
     background-color: rgba(0,0,0,0.25);
@@ -29,7 +28,6 @@
     flex-direction: column;
     align-items: start;
     position: relative;
-    /* alto total de la pantalla , menos el header, menos el footer */
     min-height: calc(100vh - 157px - 88px);
 }
 
