@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import * as Switch from "@radix-ui/react-switch";
 import "./OptionSwitch.css";
 import {Controller} from "react-hook-form";

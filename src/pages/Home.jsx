@@ -68,37 +68,36 @@ const Home = () => {
         },
     });
     return (
-        <Layout>
-            <section className="banner">
-                <div className="banner__content container">
-                    <h3 className="banner__title"> EcoTech </h3>
-                    <p className="banner__text">
-                        En EcoTech nos encargamos de que todas las empresas puedan tener
-                        funcionalidades sostenibles.
-                    </p>
-
-                    <div className="table_container">
-                        {!isLoading && data && (
-                            <DataGrid
-                                rows={data}
-                                columns={columns}
-                                paginationModel={paginationModel}
-                                onPaginationModelChange={setPaginationModel}
-                                pageSizeOptions={[5]}
-                                disableRowSelectionOnClick
-                                disableColumnMenu
-                                paginationMode="server"
-                                rowCount={rowCount}
-                            />
-                        )}
-                        {isLoading && <span>Cargando....</span>}
-                    </div>
-                    <Link className="banner__link" to="/create-action">
-                        Crea tu acción sostenible
-                    </Link>
-                </div>
-            </section>
-        </Layout>
+      <Layout>
+      <section className="banner">
+          <div className="banner__content container">
+              <h3 className="banner__title"> EcoTech </h3>
+              <p className="banner__text">
+                  En EcoTech nos encargamos de que todas las empresas puedan tener
+                  funcionalidades sostenibles.
+              </p>
+                  {!isLoading && data?.length > 0 && (
+                      <div className="table_container">
+                      <DataGrid
+                          rows={data}
+                          columns={columns}
+                          paginationModel={paginationModel}
+                          onPaginationModelChange={setPaginationModel}
+                          pageSizeOptions={[5]}
+                          disableRowSelectionOnClick
+                          disableColumnMenu
+                          paginationMode="server"
+                          rowCount={rowCount}
+                      />
+                      </div>
+                  )}
+                  {isLoading && <span>Cargando....</span>}
+              <Link className="banner__link" to="/create-action">
+                  Crea tu acción sostenible
+              </Link>
+          </div>
+      </section>
+  </Layout>
     );
 };
 
